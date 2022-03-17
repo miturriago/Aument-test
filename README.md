@@ -23,6 +23,9 @@ Start the project, run following command:
 - `npm i`
 - `npm start`
 
+the server will run http://localhost/3000
+
+
 # Run Backend
 
 
@@ -31,6 +34,9 @@ Start the project, run following command:
 - `npm i`
 - `npm run dev` o
 - `npm run start`
+
+the server will run http://localhost/9000
+
 
 ## Branches
 
