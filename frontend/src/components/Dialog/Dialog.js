@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Card from "@mui/material/Card";
 import TextField from "@mui/material/TextField";
+import TextareaAutosize from "@mui/material/TextareaAutosize";
 import { AuthContext } from "../../context/authProvider";
 import { styles } from "./style";
 import { Button, CardActions } from "@mui/material";
@@ -27,7 +28,6 @@ function DialogComponent(props) {
     const date = new Date().toDateString();
     const data = { title, text, image, date, tag };
 
-    console.log(url, date, data);
     fetch(apiUrl + url, {
       method: props.action === "new" ? "POST" : "PUT", // or 'PUT'
       body: JSON.stringify(data), // data can be `string` or {object}!
@@ -68,14 +68,15 @@ function DialogComponent(props) {
             onChange={(e) => setTitle(e.target.value)}
           />
 
-          <TextField
-            style={styles.input}
-            required
+          <InputLabel id="demo-simple-select-label">Descripción*</InputLabel>
+          <TextareaAutosize
+            minRows={10}
             id="outlined-required"
-            label="Texto"
             value={text}
+            required
             onChange={(e) => setText(e.target.value)}
           />
+          <br />
 
           <TextField
             style={styles.input}
