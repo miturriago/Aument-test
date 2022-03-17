@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  backend:
+    container_name: backend
+    build: ./backend
+    restart: always
+    ports:
+      - "9000:9000"
+
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    restart: always
+    ports:
+      - "3000:3000"
+
+  nginx:
+    image: nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    links:
+      - backend
+      - frontend

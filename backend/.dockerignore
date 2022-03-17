@@ -1,0 +1,13 @@
+/.idea
+/.git
+/gen
+/node_modules
+npm-debug.log
+/__tests__
+.gitlab-ci.yml
+.gitignore
+README.md
+test.yaml
+users.iml
+jest.config.js
+README.md
