@@ -1,9 +1,9 @@
 # Aument.io - Posts
 
 
-**Note:Aument.io - Posts  is using npm**
+**Note: Aument.io - Posts  is using npm**
 
-**Note:This project contains dockers**
+**Note: This project contains dockers**
 
 # Run Docker
 Install docker and run
@@ -19,18 +19,18 @@ the server will run http://localhost/
 
 
 Start the project, run following command:
-`cd frontend`
-`npm i`
-`npm start`
+- `cd frontend`
+- `npm i`
+- `npm start`
 
 # Run Backend
 
 
 Start the project, run following command:
-`cd backend`
-`npm i`
-`npm run dev` o
-`npm run start`
+- `cd backend`
+- `npm i`
+- `npm run dev` o
+- `npm run start`
 
 ## Branches
 
